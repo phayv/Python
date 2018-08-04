@@ -4,8 +4,8 @@
   "description": "This project is to use the Django Framework with React to help others display their artistic portfolios.",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development ./react_test/frontend/src/components/index.js --output ./react_test/frontend/static/frontend/main.js",
-    "build": "webpack --mode production ./react_test/frontend/src/components/index.js --output ./react_test/frontend/static/frontend/main.js",
+    "dev": "webpack --mode development ./django_react_website/frontend/src/components/index.js --output ./django_react_website/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./django_react_website/frontend/src/components/index.js --output ./django_react_website/frontend/static/frontend/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
