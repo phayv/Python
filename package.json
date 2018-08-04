@@ -1,0 +1,36 @@
+{
+  "name": "open_project",
+  "version": "1.0.0",
+  "description": "This project is to use the Django Framework with React to help others display their artistic portfolios.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development ./react_test/frontend/src/components/index.js --output ./react_test/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./react_test/frontend/src/components/index.js --output ./react_test/frontend/static/frontend/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phayv/open_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phayv/open_project/issues"
+  },
+  "homepage": "https://github.com/phayv/open_project#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "weak-key": "^1.0.0",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {}
+}
