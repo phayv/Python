@@ -64,3 +64,6 @@ def get_frequency_of_words(input_file, output_file):
     """
     for key, value in sorted(freq.items()):
         f.write("{} : {}\n".format(key, value))
+
+    data.close()
+    f.close()
