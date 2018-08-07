@@ -13,7 +13,8 @@ def get_frequency_of_words(input_file, output_file):
     (O)n - read in each letter, and then 
     (O)n - lower every letter
     """
-    data =  open('{}'.format(input_file), 'r').read().lower()
+    with open('{}'.format(input_file), 'r') as data:
+        sents = data.read().lower()
 
     """
     (O)n - only needs to go through each character once to find boundaries.
@@ -26,7 +27,7 @@ def get_frequency_of_words(input_file, output_file):
     3. {1,}
         - assuming we want all words lengths, {1,} should give all words of length 1 or higher.
     """
-    match_pattern = re.findall(r'\b[a-z0-9]{1,}\b', data)
+    match_pattern = re.findall(r'\b[a-z0-9]{1,}\b', sents)
 
 
     """
@@ -64,6 +65,6 @@ def get_frequency_of_words(input_file, output_file):
     """
     for key, value in sorted(freq.items()):
         f.write("{} : {}\n".format(key, value))
-
-    data.close()
+        
     f.close()
+    data.close()
